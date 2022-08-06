@@ -1,0 +1,68 @@
+footer {
+  width: 90%;
+  height: 100vh;
+}
+
+body {
+  background: blue;
+  color: white;
+}
+
+.container {
+  display: flex;
+}
+
+article[role=main] {
+  width: 62.5%;
+}
+
+aside[role=complementary] {
+  width: 31.25%;
+  margin-left: auto;
+}
+
+header {
+  color: blue;
+  background: white;
+}
+header:hover {
+  background: green;
+}
+
+nav:hover {
+  color: pink;
+}
+nav ul {
+  background: blue;
+  color: white;
+}
+nav ul li {
+  background: white;
+  color: blue;
+}
+nav ul li:hover {
+  font-weight: bold;
+}
+
+.btn-primary {
+  border: 1px solid blue;
+  background: blue;
+  color: white;
+  border-radius: 20px;
+}
+
+.btn-secondary {
+  border: 1px solid blue;
+  background: grey;
+  color: white;
+  border-radius: 20px;
+}
+
+.btn-success {
+  border: 1px solid blue;
+  background: green;
+  color: white;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+$p:blue;
+$l:white;
+
+@use "footer";
+@use "sass:math";
+body{
+  background:$p;
+  color:$l;
+}
+
+
+.container {
+  display: flex;
+}
+
+article[role="main"] {
+  width: math.div(600px, 960px) * 100%;
+}
+
+aside[role="complementary"] {
+  width: math.div(300px, 960px) * 100%;
+  margin-left: auto;
+}
+header{
+  color:$p;
+  background:$l;
+
+  &:hover{
+    background:green;
+  }
+}
+
+nav{
+  &:hover{
+    color:pink;
+  }
+  ul{
+    background:$p;
+    color:$l;
+    li{
+      background:$l;
+      color:$p;
+
+      &:hover{
+        font-weight: bold;
+      }
+    }
+
+  }
+}
+@mixin btnBase($bgcolor:$p){
+  border:1px solid $p;
+  background:$bgcolor;
+  color:$l;
+  border-radius:20px;
+}
+.btn-primary{
+  @include btnBase()
+}
+.btn-secondary{
+  @include btnBase(grey);
+}
+.btn-success{
+  @include btnBase(green)
+}
